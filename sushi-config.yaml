@@ -74,8 +74,24 @@ publisher:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+pages:
+  index.md:
+    title: Home
+  about.md:
+    title: About
+  mba.md:
+    title: MBA
+  personal.md:
+    title: Personal Life
+  resume.md:
+    title: Resume
+
 menu:
   Home: index.html
+  About: about.html
+  MBA: mba.html
+  Personal Life: personal.html
+  Resume: resume.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
