@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: junaid.portfolio
-canonical: http://junaid.portfolio.com
+canonical: http://junaid.dev
 name: JunaidPortfolioIG
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
@@ -18,7 +18,7 @@ releaseLabel: ci-build
 publisher:
   name: Junaid Siddiqui
   url: https://www.linkedin.com/in/junaidsidd/
-  # email: test@example.org
+  email: junaid.portfolio@protonmail.com
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced

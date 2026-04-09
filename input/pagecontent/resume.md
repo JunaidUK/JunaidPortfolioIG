@@ -1,8 +1,4 @@
-# Resume
-
 A full copy of my resume is available for download below. The summary sections on this page provide a quick reference for key credentials and experience highlights.
-
-<a href="Resume.pdf" class="btn btn-primary" download>Download Resume (PDF)</a>
 
 ---
 
@@ -11,24 +7,21 @@ A full copy of my resume is available for download below. The summary sections o
 **FHIR & Interoperability**
 - HL7 FHIR R4 / R4B profiling, validation, and Implementation Guide authoring
 - FSH (FHIR Shorthand) and SUSHI compiler
-- SMART on FHIR, OAuth 2.0, OpenID Connect
-- HL7 v2 message processing, CDA / C-CDA document handling
-- Terminology management: SNOMED CT, LOINC, RxNorm, ICD-10-CM/PCS
+- SMART on FHIR, OAuth 2.0
+- Terminology management: SNOMED CT, LOINC, RxNorm, ICD-10-CM
 
 **Software Development & Platforms**
-- JavaScript, React, Next.js, Vite, Node.js (primary); Python, Java
+- JavaScript, React, Next.js, Vite, Node.js (primary)
 - AWS, GCP, Azure, Vercel
 - Claude Code, Cursor, LLM APIs, Supabase
 - HAPI FHIR Server, Azure Health Data Services, AWS HealthLake, Google Cloud Healthcare API
 - Docker, GitHub Actions, CI/CD pipelines
-- Inferno testing framework, Touchstone, Postman
 - SQL, Tableau, Sysomos, Crimson Hexagon
 
 **Business & Leadership**
 - MBA in Health (Distinction) — UCL Global Business School for Health
 - Business case development and executive stakeholder communication
 - Agile / Scrum delivery
-- Regulatory compliance: CMS Interoperability Rule, ONC TEFCA, Da Vinci Prior Authorization
 
 ---
 
@@ -69,15 +62,14 @@ UCL Global Business School for Health — London, UK (2025)
 **Bachelor of Science, Health Services Administration**
 James Madison University — Harrisonburg, VA (2016)
 
+___
+<a href="Resume.pdf" class="btn btn-primary" download>Download Resume (PDF)</a>
 ---
 
-## Certifications & Affiliations
+## Links
 
-- HL7 FHIR Connectathon participant
 - GitHub: [github.com/JunaidUK](https://github.com/JunaidUK)
 - LinkedIn: [linkedin.com/in/junaidsidd](https://www.linkedin.com/in/junaidsidd/)
-
-[TODO: Add any formal certifications, e.g., HL7 FHIR certification, HIMSS membership, or other professional credentials.]
 
 ---
 

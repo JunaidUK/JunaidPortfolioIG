@@ -15,4 +15,4 @@ Do not run any commands against this directory, the contents are meant to be gen
 ## Development Scripts
 - `sushi build .` - Builds the Implementation Guide from the root directory
 - `_updatePublisher.sh` - Downloads the Implementation Guide Publisher 
-- `_genonce.sh` - Generates HTML outputs for Implementation Guide
+- `_genonce.sh` - Generates HTML outputs for Implementation Guide, and should be used to verify any changes to content in following directories:`input/pagecontent`, `input/includes`, `input/images` 

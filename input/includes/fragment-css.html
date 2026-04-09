@@ -1,0 +1,243 @@
+<style>
+/* ================================================================
+   COLOUR TOKENS — FHIR IG Template Variables
+   ================================================================ */
+:root {
+  --navbar-bg-color:             #0d1e1a;   /* deep ink teal */
+  --footer-bg-color:             #090f0e;
+  --footer-container-bg-color:   #0d1e1a;
+  --stripe-bg-color:             #060c0b;   /* ultra-dark stripe */
+  --btn-hover-color:             #1a6b5e;
+  --btn-active-color:            #134e46;
+  --btn-gradient-start-color:    #0d1e1a;
+  --btn-gradient-end-color:      #1a6b5e;
+  --link-color:                  #1aab9b;
+  --link-hover-color:            #12877a;
+  --ig-status-text-color:        #1aab9b;
+
+  /* Custom tokens used in page fragments */
+  --pf-ink:      #0d1e1a;
+  --pf-teal:     #1aab9b;
+  --pf-teal-dk:  #12877a;
+  --pf-teal-lt:  rgba(26, 171, 155, 0.12);
+  --pf-cream:    #f5f6f4;
+  --pf-border:   #dde0dc;
+  --pf-muted:    #5a6a65;
+  --pf-text:     #1a2420;
+}
+
+/* Hide publish box */
+#publish-box { display: none; }
+
+/* ================================================================
+   BASE TYPOGRAPHY
+   ================================================================ */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif !important;
+  color: var(--pf-text);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'New York', 'Palatino Linotype', Palatino, Georgia, serif !important;
+  color: var(--pf-ink);
+  font-weight: 600;
+}
+
+/* ================================================================
+   SITE HEADER
+   ================================================================ */
+#segment-header {
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+#ig-status p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.03em;
+}
+
+#ig-status span[style*="font-size:12pt"] {
+  font-family: 'New York', 'Palatino Linotype', Palatino, Georgia, serif !important;
+  font-size: 1.2rem !important;
+  letter-spacing: -0.01em;
+}
+
+/* Logo */
+#logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.logo-avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 80px;
+  display: block;
+  border: 2px solid rgba(26, 171, 155, 0.35);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  position: relative;
+  z-index: 1;
+}
+.logo-avatar:hover {
+  border-color: rgba(26, 171, 155, 0.75);
+  box-shadow: 0 0 0 4px rgba(26, 171, 155, 0.12);
+}
+
+.logo-name {
+  font-family: 'New York', 'Palatino Linotype', Palatino, Georgia, serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--pf-ink);
+  line-height: 1.1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  pointer-events: none;
+}
+
+#ig-status {
+  display: none;
+}
+
+/* ================================================================
+   NAVBAR
+   ================================================================ */
+#segment-navbar {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif !important;
+  font-size: 1.25rem !important;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+/* ================================================================
+   CONTENT AREA — GLOBAL
+   ================================================================ */
+#segment-content {
+  background: #fff;
+}
+
+.col-12 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.75;
+  color: var(--pf-text);
+}
+
+.col-12 p,
+.col-12 li {
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+/* Numbered heading prefix — muted */
+.col-12 h2:before,
+.col-12 h3:before,
+.col-12 h4:before {
+  color: #bbb !important;
+}
+
+/* ---- Content headings ---- */
+.col-12 > h2,
+.col-12 .markdown-body h2,
+div[class="col-12"] h2 {
+  font-family: 'New York', 'Palatino Linotype', Palatino, Georgia, serif !important;
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--pf-ink);
+  border-bottom: 1px solid var(--pf-border);
+  padding-bottom: 0.4rem;
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.col-12 h3 {
+  font-family: 'New York', 'Palatino Linotype', Palatino, Georgia, serif !important;
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: var(--pf-ink);
+  margin-top: 1.5rem;
+}
+
+/* ---- Links ---- */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* ---- Tables ---- */
+table {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif !important;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  overflow: hidden;
+}
+table thead th {
+  background: var(--pf-ink) !important;
+  color: #fff !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.09em !important;
+  text-transform: uppercase;
+  border: none !important;
+}
+table td {
+  font-size: 1.5rem !important;
+}
+table > tbody > tr:hover > td {
+  background-color: rgba(26, 171, 155, 0.05) !important;
+}
+
+/* ---- Blockquotes ---- */
+blockquote {
+  border-left: 3px solid var(--pf-teal);
+  padding-left: 1.25rem;
+  color: var(--pf-muted);
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+/* ---- Code ---- */
+code {
+  font-size: 0.85em;
+  background: #f0f3f2;
+  border-radius: 2px;
+  padding: 0.15em 0.4em;
+  color: var(--pf-ink);
+}
+
+/* ================================================================
+   FOOTER
+   ================================================================ */
+#segment-footer {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.01em;
+}
+
+/* ================================================================
+   BREADCRUMB
+   ================================================================ */
+#segment-breadcrumb {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.8rem;
+}
+</style>
